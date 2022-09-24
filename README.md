@@ -4,6 +4,7 @@
 thist script will help you to block your program from internet using firewall automaticaly
 </p>
 <h2>how to use</h2>
+<div>
 <ol>
 <li>download this repository</li>
 <li>extract the file downloaded</li>
@@ -12,4 +13,5 @@ thist script will help you to block your program from internet using firewall au
 <li>delete the file from the folder</li>
 <li>done</li>
 </ol>
+</div>
 </body>
