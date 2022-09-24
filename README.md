@@ -1,9 +1,12 @@
 <body>
-<h2>what can it do</h2>
+<details open>
+  <summary><h2>what can it do</h2></summary>
 <p>
 thist script will help you to block your program from internet using firewall automaticaly
 </p>
-<h2>how to use</h2>
+</detail>
+<details open>
+  <summary><h2>how to use</h2></summary>
 <div>
 <ol>
 <li>download this repository</li>
@@ -14,4 +17,5 @@ thist script will help you to block your program from internet using firewall au
 <li>done</li>
 </ol>
 </div>
+</detail>
 </body>
