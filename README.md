@@ -4,7 +4,8 @@
 <p>
 thist script will help you to block your program from internet using firewall automaticaly
 </p>
-</detail>
+</details>
+
 <details open>
   <summary><h2>how to use</h2></summary>
 <div>
@@ -17,5 +18,5 @@ thist script will help you to block your program from internet using firewall au
 <li>done</li>
 </ol>
 </div>
-</detail>
+</details>
 </body>
