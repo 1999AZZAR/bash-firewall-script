@@ -14,4 +14,9 @@ This script will help you block your program from internet access using the Wind
 5. Delete the `.bat` file from the folder
 6. Done
 
-Please note that running the script will block all internet access for the specified programs, so use it carefully.
+## Explanation
+The script is written in `batch` language which is a scripting language for the Windows command line. The script uses the `for` and `netsh` command to add new firewall rules for each `.exe` file found in the current directory and all its subdirectories. The `for /R` command is used to recursively search through all subdirectories while the `%%f` variable holds the current file path. 
+It uses the `netsh advfirewall firewall add rule` command to add new firewall rules to block incoming and outgoing connections for each file. The `name`, `dir`, and `program` options are used to specify the name, direction, and path of the program for the new rule. 
+The script also uses the `setlocal enableextensions` command to enable the use of extensions in the script and `cd /d "%~dp0"` to change the current directory to the location of the script file.
+It also include `pause` command to halt the execution of the script until the user press any key so you can check the results before closing the command prompt.
+Please note that running this script will block all internet access for the specified programs, so use it carefully and make sure you have backup copies of the files you want to block.
