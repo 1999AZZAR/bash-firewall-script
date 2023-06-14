@@ -24,4 +24,27 @@ This script helps you block internet access for specific programs using the Wind
 - The script includes the `setlocal enableextensions` command to enable extensions and `cd /d "%~dp0"` to change to the script's directory.
 - A `pause` command is included so you can review the results before closing the command prompt.
 
+## Flowchart
+
+```mermaid
+graph LR
+
+subgraph Initialize
+    A[Set Echo Off]
+    B[Enable Local Extensions]
+    C[Change Directory]
+end
+
+subgraph Loop
+    D[Loop through files *.exe]
+    E[Add Outbound Firewall Rule]
+    F[Add Inbound Firewall Rule]
+end
+
+G[Display Pause Message]
+
+A --> B --> C --> D --> E --> F --> D
+D -->|Done| G
+```
+
 Note: Be cautious when using this script, as it blocks all internet access for the specified programs. Make sure to have backup copies of the files you want to block.
